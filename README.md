@@ -13,7 +13,7 @@ Our project is a website that shows traditional, national dishes from each count
 2.	Project Sitemap
  
 
-
+Sitemap and the full doc can be found in the folder named project part 2 READ ME
 
 
 
