@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="Recipe_Style.css" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Della+Respira&family=Open+Sans&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <header>
+    <div class="container">
+      <h3 class="logo">Tastes of South East Asia</h3>
+
+      <nav>
+        <ul>
+          <li><a class="head" href="">About</a></li>
+          <li><a class="head" href="">Register</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <div class="recipebody">
+  <br>
+  <!--Put Dish name here-->
+  <h1>Dish name </h1>
+  <div class="Recipe_image">
+    <!--Put food image here below-->
+    <img src="https://cook.fnr.sndimg.com/content/dam/images/cook/fullset/2012/9/6/0/CCATH102_Amok-fish-recipe_s4x3.jpg.rend.hgtvcom.826.620.suffix/1351635230862.jpeg" id="imgClickAndChange" onclick="changeImage()">
+  </div>
+  <div class='Ingredients'>
+    <h3>Ingredients</h3>
+    <!--Put the list of ingredients here below (add more is needed)-->
+    <li></li>
+    <li></li>
+    <li></li>
+  </div>
+<br>
+
+  <div class='Instruction'>
+    <h2>Instructions<!--Put Dish name here--></h2>
+    <!--Put the stps here below (add more is needed)-->
+    <li></li>
+    <br>
+    <li></li>
+    <br>
+    <li></li>
+    <br>
+  </div>
+  <br>
+<!--Put the link to its history below here-->
+<a class="History" href="DISHHISTORY.html">
+  Learn more about this dish
+</a>
+<br>
+<br>
+<br>
+<form name="submission">
+  <label for="comment">Leave a comment</label><br>
+  <input type="text" id="Comment" name="comment">
+</form>
+<br>
+<button id="submit">Submit</button>
+<div id="myModal" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+     <div class="modal-header">
+       <span class="close">&times;</span>
+       <h2>Thank you for leaving a comment</h2>
+     </div>
+     <div class="modal-body">
+       <p>Your submission will first be examined by moderators</p>
+     </div>
+   </div>
+
+</div>
+<div class='Acknowledge'>
+  <p>Acknowledgement<p>
+    <p>The recipe is credited to: </p>
+</div>
+</body>
+<script src="Recipe_Script.js">
+</script>
+</html>

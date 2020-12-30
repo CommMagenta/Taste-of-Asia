@@ -1,0 +1,64 @@
+.logo {
+    font-family: 'Della Respira', serif;
+    font-size: 35px;
+    float: left;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+
+header {
+
+    background: #55d6aa;
+}
+
+header::after {
+    content: ' ';
+    display: table;
+    clear: both;
+}
+
+nav {
+    float: right;
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+nav li {
+    display: inline-block;
+    margin-left: 70px;
+    padding-top: 45px;
+    font-size: 20px;
+    font-family: 'Della Respira', serif;
+}
+
+nav a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: black;
+}
+
+.featured_cont {
+    display: flex;
+    width: 80%;
+    margin: 0 auto
+}
+
+.members {
+    flex-basis: 60%;
+    font-family: 'Open Sans';
+    padding-left: 40px;
+}
+
+.imgpadding {
+  width:150px;
+height:100px;
+padding: 50px 50px 50px 120px;
+}

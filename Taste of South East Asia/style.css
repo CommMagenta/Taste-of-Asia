@@ -1,0 +1,144 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration:none ;
+    color: black;
+}
+a:visited{
+    text-decoration: none;
+    color: black;
+}
+
+.logo {
+    font-family: 'Della Respira', serif;
+    font-size: 35px;
+    float: left;
+    padding-bottom: 10px;
+    text-decoration: none;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+header {
+
+    background: #55d6aa;
+    width: 100%;
+}
+
+header::after {
+    content: ' ';
+    display: table;
+    clear: both;
+}
+
+nav {
+    float: right;
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+nav li {
+    display: inline-block;
+    margin-left: 70px;
+    padding-top: 15px;
+    padding-bottom: 20px;
+    font-size: 20px;
+    font-family: 'Della Respira', serif;
+}
+
+nav a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: black;
+}
+
+.featured_cont {
+    display: flex;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.featured_desc {
+    flex-basis: 60%;
+    font-family: 'Open Sans';
+    padding-left: 40px;
+    max-height: 614px;
+    overflow: auto;
+}
+
+.featured_desc_text {
+    max-height: 425px;
+    overflow: hidden;
+}
+
+.featured_recipe {
+    font-family: 'Open Sans';
+}
+
+.featured_img {
+    display: inline-block;
+    flex-basis: 100%;
+}
+
+img {
+    max-width: 100%;
+}
+
+h1 {
+    font-family: 'Open Sans';
+}
+
+.bor {
+    text-align: center;
+}
+
+.recipe_block {    
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    background-color: rgb(253, 253, 253);
+    padding: 16px;
+    text-align: center;
+    transition: transform .2s;
+}
+
+.recipe_block:hover{
+    transform: scale(1.1);
+}
+
+.row::after {
+    display: table;
+    clear: both;
+    content: "";
+}
+
+.row{margin: 0 -5px}
+
+@media screen and (max-width: 600px) {
+    .column{
+        width: 100%;
+        display: block;
+        margin-bottom: 20px;
+    }
+}
+
+.column{
+    float: left;
+    width: 25%;
+    padding:0 10px;
+    text-decoration: none;
+}
+
+
+.recipe_name {
+    font-size: 25px;
+    font-family: 'Della Respira', serif;
+}

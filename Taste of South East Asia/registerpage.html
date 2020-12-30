@@ -1,0 +1,198 @@
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body{
+  font-family: Calibri, Helvetica, sans-serif;
+  background-color: #55d6aa;
+}
+.container {
+    padding: 50px;
+  background-color: #BBDBF7;
+}
+
+a{
+    text-decoration:none ;
+    color: black;
+}
+a:visited{
+    text-decoration: none;
+    color: black;
+}
+
+input[type=text], input[type=password], textarea {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
+input[type=text]:focus, input[type=password]:focus {
+  background-color: white;
+  outline: none;
+}
+ div {
+            padding: 10px 0;
+         }
+hr {
+  border: 1px solid gold;
+  margin-bottom: 25px;
+}
+.registerbtn {
+  background-color: blue;
+  color: white;
+  padding: 16px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+.registerbtn:hover {
+  opacity: 1;
+}
+ .background {
+  background-image: url('recipe_background.jpg');
+background-repeat: no-repeat;
+background-attachment: fixed;
+  background-size: cover;
+}
+.logo {
+    font-family: 'Della Respira', serif;
+    font-size: 35px;
+    float: left;
+    text-decoration: none;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+header {
+    width: 100%;
+    background: #55d6aa;
+}
+
+header::after {
+    content: ' ';
+    display: table;
+    clear: both;
+}
+
+nav {
+    float: right;
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+nav li {
+    display: inline-block;
+    margin-left: 70px;
+    padding-top: 45px;
+    font-size: 20px;
+    font-family: 'Della Respira', serif;
+}
+
+nav a.head {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: black;
+}
+h1, h2, h4{
+  color: black;
+}
+</style>
+</head>
+<body>
+  <header>
+    <div class="container1">
+      <a href="index.html"><h3 class="logo">Tastes of South East Asia</h3></a>
+
+      <nav>
+        <ul>
+          <li><a class="head" href="About.html">About</a></li>
+          <li><a class="head" href="registerpage.html">Register</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+<div class="background">
+<form>
+  <div class="container">
+  <center><h1><i>Recipe Course Registeration Form</i></h1> </center>
+  <hr>
+
+<label><h2>First Name</h2></label>
+
+<input type="text" name="firstname" placeholder= "Firstname" size="15" required />
+<label><h2>Middle Name</h2></label>
+<input type="text" name="middlename" placeholder="Middlename" size="15" required />
+<label><h2>Last Name</h2></label>
+<input type="text" name="lastname" placeholder="Lastname" size="15"required />
+<div>
+
+<label for="recipe"><h2>Choose a recipe:</h2></label>
+<select id="recipe">
+<option value="NasiLemak">Nasi Lemak</option>
+<option value="Laap">Laap</option>
+<option value="LephetToke">Lephet Toke</option>
+<option value="Rendang">Rendang</option>
+<option value="PadThaiDONE">Pad Thai DONE</option>
+<option value="PhoDONE">Pho DONE</option>
+<option value="FishAmok">Fish Amok</option>
+<option value="ChickenAdobo">Chicken Adobo</option>
+</select>
+</div>
+<div>
+<label>
+<h2>Gender: </h2>
+</label><br>
+  <label class="radio-inline">
+    <h4>Male</h4>
+
+      <input type="radio" name="optradio"><h4>Female</h4>
+      <input type="radio" name="optradio"><h4>Other</h4>
+      <input type="radio" name="optradio">
+    </label>
+</div>
+
+
+
+
+
+
+<label>
+<h2>Phone: </h2>
+</label>
+<input type="text" name="country code" placeholder="Country Code"  value="+60" size="2"/>
+<input type="text" name="phone" placeholder="phone no." size="10"/ required>
+<label>
+<h2>Current Address:</h2>
+</label>
+  <textarea cols="80" rows="5" placeholder="Current Address" value="address" required>
+</textarea>
+ <label for="email"><h2>Email: </h2></label>
+ <input type="text" placeholder="Enter Email" name="email" required>
+
+    <label for="psw"><h2>Password: </h2></label>
+    <input type="password" placeholder="Enter Password" name="psw" required>
+
+    <label for="psw-repeat"><h2>Re - Type Password: </h2></label>
+    <input type="password" placeholder="Retype Password" name="psw-repeat" required>
+    <button type="submit" onClick="myFunction()" class="registerbtn" >Register</button>
+</form>
+</div>
+</div>
+</body>
+<script>
+      function myFunction() {
+        window.location.href="index.html";
+      }
+      </script>
+</html>
